@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/styles.dart';
+import 'package:realstateapp/features/Splash/presentation/views/widgets/custom_button.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -17,7 +18,7 @@ class SplashViewBody extends StatelessWidget {
           Image.asset(
             logoImage,
           ),
-          SizedBox(height: height * 0.05),
+          SizedBox(height: height * 0.06),
           Text(
             'Hello in Real State App',
             style: Styles.textstyle30,
@@ -26,6 +27,10 @@ class SplashViewBody extends StatelessWidget {
             'efficiently and effectively',
             style: Styles.textstyle20.copyWith(color: Colors.grey),
           ),
+          SizedBox(
+            height: height * 0.15,
+          ),
+          CustomButton(),
         ],
       ),
     );
