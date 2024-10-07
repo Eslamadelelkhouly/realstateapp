@@ -15,9 +15,9 @@ class ImageAnimation extends StatelessWidget {
     return RippleAnimation(
       child: CircleAvatar(
         maxRadius: width * 0.3,
-        backgroundImage: AssetImage(logoImage),
+        backgroundImage: const AssetImage(logoImage),
       ),
-      color: Color(0xffFC9732),
+      color: const Color(0xffFC9732),
       delay: const Duration(milliseconds: 300),
       repeat: false,
       minRadius: 75,

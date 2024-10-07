@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/app_router.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 import 'package:realstateapp/core/widgets/custom_button.dart';
 import 'package:realstateapp/features/Splash/presentation/views/widgets/image_animation.dart';
-import 'package:simple_ripple_animation/simple_ripple_animation.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -21,7 +19,7 @@ class SplashViewBody extends StatelessWidget {
           SizedBox(height: height * 0.2),
           ImageAnimation(width: width),
           SizedBox(height: height * 0.06),
-          Text(
+          const Text(
             'Hello in Real State App',
             style: Styles.textstyle30,
           ),
