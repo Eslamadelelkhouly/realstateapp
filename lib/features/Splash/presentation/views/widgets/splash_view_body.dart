@@ -4,6 +4,7 @@ import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/app_router.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 import 'package:realstateapp/core/widgets/custom_button.dart';
+import 'package:realstateapp/features/Splash/presentation/views/widgets/image_animation.dart';
 import 'package:simple_ripple_animation/simple_ripple_animation.dart';
 
 class SplashViewBody extends StatelessWidget {
@@ -18,18 +19,7 @@ class SplashViewBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: height * 0.2),
-          RippleAnimation(
-            child: CircleAvatar(
-              maxRadius: width * 0.3,
-              backgroundImage: AssetImage(logoImage),
-            ),
-            color: Color(0xffFC9732),
-            delay: const Duration(milliseconds: 300),
-            repeat: false,
-            minRadius: 75,
-            ripplesCount: 6,
-            duration: const Duration(milliseconds: 6 * 300),
-          ),
+          ImageAnimation(width: width),
           SizedBox(height: height * 0.06),
           Text(
             'Hello in Real State App',
