@@ -3,10 +3,15 @@ import 'package:realstateapp/core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton(
-      {super.key, required this.height, required this.width, this.onPressed});
+      {super.key,
+      required this.height,
+      required this.width,
+      this.onPressed,
+      required this.text});
   final double height;
   final double width;
   final void Function()? onPressed;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +20,7 @@ class CustomButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         child: Text(
-          'Start Now',
+          text,
           style: Styles.textstyle20Bold.copyWith(
             color: Colors.white,
           ),

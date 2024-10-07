@@ -31,6 +31,7 @@ class SplashViewBody extends StatelessWidget {
             height: height * 0.25,
           ),
           CustomButton(
+            text: 'Start Now',
             onPressed: () {
               GoRouter.of(context).push(
                 AppRouter.Ksingupscreen,
