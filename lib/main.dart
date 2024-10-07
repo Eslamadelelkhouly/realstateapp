@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:realstateapp/core/utils/app_router.dart';
 import 'package:realstateapp/features/Splash/presentation/views/splash_view.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Real State',
       themeMode: ThemeMode.light,
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      home: const SplashView(),
+      routerConfig: AppRouter.router,
     );
   }
 }

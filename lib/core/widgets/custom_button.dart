@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton(
+      {super.key, required this.height, required this.width, this.onPressed});
+  final double height;
+  final double width;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    final double height = MediaQuery.of(context).size.height;
-    final double width = MediaQuery.of(context).size.width;
     return Container(
-      width: width - width * 0.1,
-      height: 55,
+      width: width,
+      height: height,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           'Start Now',
           style: Styles.textstyle20Bold.copyWith(
