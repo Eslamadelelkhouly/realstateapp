@@ -40,6 +40,9 @@ class SplashViewBody extends StatelessWidget {
             width: width - width * 0.1,
             height: 55,
           ),
+          SizedBox(
+            height: height * 0.01,
+          )
         ],
       ),
     );

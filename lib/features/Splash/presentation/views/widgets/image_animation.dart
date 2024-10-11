@@ -17,7 +17,7 @@ class ImageAnimation extends StatelessWidget {
         maxRadius: width * 0.3,
         backgroundImage: const AssetImage(logoImage),
       ),
-      color: const Color(0xffFC9732),
+      color: secondryColor,
       delay: const Duration(milliseconds: 300),
       repeat: false,
       minRadius: 75,

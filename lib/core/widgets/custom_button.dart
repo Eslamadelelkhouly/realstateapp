@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
@@ -29,7 +30,7 @@ class CustomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          backgroundColor: const Color(0xffFC9732),
+          backgroundColor: secondryColor,
         ),
       ),
     );

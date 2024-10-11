@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:realstateapp/core/utils/app_router.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 import 'package:realstateapp/core/widgets/custom_button.dart';
 import 'package:realstateapp/features/Signup/presentation/views/widgets/custom_text_field.dart';
@@ -22,7 +24,7 @@ class SignupViewBody extends StatelessWidget {
               ),
               ImageAnimation(width: width),
               SizedBox(height: height * 0.05),
-              Text(
+              const Text(
                 'Let\'s Start!',
                 style: Styles.textstyle30,
               ),
@@ -34,7 +36,7 @@ class SignupViewBody extends StatelessWidget {
                 hintText: 'Email',
                 width: width - width * 0.15,
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               CustomTextField(
                 obcureText: true,
                 hintText: 'Password',
@@ -43,7 +45,11 @@ class SignupViewBody extends StatelessWidget {
               const SizedBox(height: 20),
               CustomButton(
                 text: 'Sign in',
-                onPressed: () {},
+                onPressed: () {
+                  GoRouter.of(context).push(
+                    AppRouter.Khomescreen,
+                  );
+                },
                 width: width - width * 0.1,
                 height: 55,
               ),
