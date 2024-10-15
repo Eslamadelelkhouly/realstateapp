@@ -31,7 +31,7 @@ class _HomeViewState extends State<HomeView> {
         key: _bottomNavigationKey,
         items: const <Widget>[
           Icon(Icons.home, size: 30),
-          Icon(Icons.create, size: 30),
+          Icon(Icons.add_task, size: 30),
           Icon(Icons.person, size: 30),
         ],
         color: Colors.white,
@@ -45,7 +45,7 @@ class _HomeViewState extends State<HomeView> {
         },
         letIndexChange: (index) => true,
       ),
-      body: _pages[index], // Display the selected page
+      body: _pages[index],
     );
   }
 }
