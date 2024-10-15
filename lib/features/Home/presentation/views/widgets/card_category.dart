@@ -3,9 +3,16 @@ import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 
 class CardCategory extends StatelessWidget {
-  const CardCategory({super.key, required this.width, required this.height});
+  const CardCategory(
+      {super.key,
+      required this.width,
+      required this.height,
+      required this.image,
+      required this.text});
   final double width;
   final double height;
+  final String image;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,12 +26,12 @@ class CardCategory extends StatelessWidget {
         children: [
           SizedBox(height: height * 0.1),
           Image.asset(
-            'assets/images/Apartment.png',
+            image,
             height: height * 0.70,
           ),
           SizedBox(height: height * 0.01),
           Text(
-            'Apartment',
+            text,
             style: Styles.textstyle20.copyWith(
               color: Colors.white,
             ),

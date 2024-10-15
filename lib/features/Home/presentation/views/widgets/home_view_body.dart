@@ -23,10 +23,6 @@ class HomeViewBody extends StatelessWidget {
             style: Styles.textstyle30.copyWith(color: secondryColor),
           ),
         ),
-        CardCategory(
-          width: width / 2.5,
-          height: height * 0.25,
-        ),
       ],
     );
   }
