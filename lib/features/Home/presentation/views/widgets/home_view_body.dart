@@ -24,7 +24,7 @@ class HomeViewBody extends StatelessWidget {
           ),
         ),
         CardCategory(
-          width: width / 2,
+          width: width / 2.5,
           height: height * 0.25,
         ),
       ],
