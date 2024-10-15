@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/styles.dart';
 import 'package:realstateapp/features/Home/presentation/views/widgets/card_category.dart';
+import 'package:realstateapp/features/Home/presentation/views/widgets/grid_view_category.dart';
+import 'package:realstateapp/features/Home/presentation/views/widgets/title_home_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -16,13 +18,13 @@ class HomeViewBody extends StatelessWidget {
         SizedBox(
           height: height * 0.1,
         ),
-        Padding(
-          padding: const EdgeInsets.all(10),
-          child: Text(
-            'Hello in RealState',
-            style: Styles.textstyle30.copyWith(color: secondryColor),
+        TitleHomeView(width: width, height: height),
+        Expanded(
+          child: GridViewCategory(
+            width: width * 2.5,
+            height: height * 0.25,
           ),
-        ),
+        )
       ],
     );
   }

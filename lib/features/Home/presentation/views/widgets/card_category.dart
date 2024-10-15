@@ -15,28 +15,31 @@ class CardCategory extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: width,
-      height: height,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: secondryColor,
-      ),
-      child: Column(
-        children: [
-          SizedBox(height: height * 0.1),
-          Image.asset(
-            image,
-            height: height * 0.70,
-          ),
-          SizedBox(height: height * 0.01),
-          Text(
-            text,
-            style: Styles.textstyle20.copyWith(
-              color: Colors.white,
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 4),
+      child: Container(
+        width: width,
+        height: height,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: secondryColor,
+        ),
+        child: Column(
+          children: [
+            SizedBox(height: height * 0.1),
+            Image.asset(
+              image,
+              height: height * 0.70,
             ),
-          ),
-        ],
+            SizedBox(height: height * 0.01),
+            Text(
+              text,
+              style: Styles.textstyle10.copyWith(
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
