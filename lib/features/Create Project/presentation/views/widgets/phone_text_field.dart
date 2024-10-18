@@ -11,6 +11,7 @@ class PhoneTextField extends StatelessWidget {
       children: [
         CodePhone(),
         CustomTextField(
+          keyboard: TextInputType.phone,
           width: width,
           hintText: 'Phone number',
           obcureText: false,

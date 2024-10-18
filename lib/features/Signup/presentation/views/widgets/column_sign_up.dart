@@ -34,12 +34,14 @@ class ColumnSignUp extends StatelessWidget {
           height: height * 0.05,
         ),
         CustomTextField(
+          keyboard: TextInputType.emailAddress,
           obcureText: false,
           hintText: 'Email',
           width: width - width * 0.15,
         ),
         const SizedBox(height: 10),
         CustomTextField(
+          keyboard: TextInputType.emailAddress,
           obcureText: true,
           hintText: 'Password',
           width: width - width * 0.15,
