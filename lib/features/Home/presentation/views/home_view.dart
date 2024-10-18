@@ -1,7 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:realstateapp/core/constant.dart';
-import 'package:realstateapp/features/Home/presentation/views/widgets/add_project_view_body.dart';
+import 'package:realstateapp/features/Create%20Project/presentation/views/add_project_view_body.dart';
 import 'package:realstateapp/features/Home/presentation/views/widgets/home_view_body.dart';
 
 class HomeView extends StatefulWidget {
