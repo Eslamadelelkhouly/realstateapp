@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:realstateapp/core/constant.dart';
-import 'package:realstateapp/core/utils/styles.dart';
-import 'package:realstateapp/features/Home/presentation/views/widgets/card_category.dart';
 import 'package:realstateapp/features/Home/presentation/views/widgets/grid_view_category.dart';
 import 'package:realstateapp/features/Home/presentation/views/widgets/title_home_view.dart';
 

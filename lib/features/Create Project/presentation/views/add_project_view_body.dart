@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:realstateapp/core/constant.dart';
 import 'package:realstateapp/core/utils/styles.dart';
-import 'package:realstateapp/features/Create%20Project/presentation/views/widgets/code_phone.dart';
+import 'package:realstateapp/features/Create%20Project/presentation/views/widgets/category_dropdown.dart';
 import 'package:realstateapp/features/Create%20Project/presentation/views/widgets/phone_text_field.dart';
 
 class AddProjectViewBody extends StatelessWidget {
@@ -24,7 +24,9 @@ class AddProjectViewBody extends StatelessWidget {
               ),
             ),
             SizedBox(height: height * 0.04),
-            PhoneTextField(width: width * 0.75)
+            PhoneTextField(width: width * 0.75),
+            SizedBox(height: height * 0.04),
+            CategoryDropdown(width: width * 0.90),
           ],
         ),
       ),
